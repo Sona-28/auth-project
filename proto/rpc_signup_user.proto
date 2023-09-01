@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package proto;
+
+import "proto/user.proto";
+
+option go_package = "github.com/Sona-28/auth-project/proto";
+
+
+
+message SingUpUserInput {
+    string name = 1;
+    string email = 2;
+    string password = 3;
+    string passwordConfirm = 4;
+}
+
+message SignUpUserResponse {
+    User user = 1;
+}

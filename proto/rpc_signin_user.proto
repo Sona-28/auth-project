@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package proto;
+
+option go_package ="github.com/Sona-28/auth-project/proto";
+
+
+message SignInUserInput {
+    string email = 1;
+    string password = 2;
+}
+
+message SignInUserResponse {
+    string status = 1;
+    string access_token = 2;
+    string refresh_token = 3;
+}

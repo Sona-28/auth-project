@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package proto;
+
+import "proto/user.proto";
+
+option go_package = "github.com/Sona-28/auth-project/proto";
+
+service UserService{
+    rpc GetMe(GetMeRequest) returns (UserResponse);
+}
+
+message GetMeRequest{
+    string Id = 1;
+}
