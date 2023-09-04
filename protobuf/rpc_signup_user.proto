@@ -1,14 +1,14 @@
 syntax = "proto3";
 
-package proto;
+package pb;
 
-import "proto/user.proto";
+import "protobuf/user.proto";
 
-option go_package = "github.com/Sona-28/auth-project/proto";
+option go_package ="github.com/kiran-blockchain/golang-mongodb-grpc/pb";
 
 
 
-message SingUpUserInput {
+message SignUpUserInput {
     string name = 1;
     string email = 2;
     string password = 3;

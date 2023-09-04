@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-package proto;
+package pb;
 
-option go_package ="github.com/Sona-28/auth-project/proto";
+option go_package ="github.com/kiran-blockchain/golang-mongodb-grpc/pb";
 
 
 message SignInUserInput {
